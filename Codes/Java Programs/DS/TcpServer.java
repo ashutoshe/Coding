@@ -34,7 +34,7 @@ class TcpServer1 extends Thread
 				
 				while(true)
 				{
-					System.out.println("\nType bye to Quit\n");
+					System.out.println("\nType bye to Close Session for Client "+(tno+1)+"\n");
 					
 					System.out.print("Enter Message to Send to Client " + (tno+1) +" : ");
 					toclient=inFromUser.readLine();// data typed at server side
@@ -104,6 +104,17 @@ class TcpServer
 				// }
 				// catch(Exception e){}
 			// }
+		}
+		while(true)
+		{
+			for(int l=0;l<10;l++)
+			{
+				if(t[l]==null)
+				{
+					t[l]=new TcpServer1(l,server/*,connected*/);
+					t[l].start();
+				}
+			}
 		}
 	}
 }
