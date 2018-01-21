@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>Images/pic1.jpg</ImageUrl>
+    <NavigateUrl>http://www.google.com</NavigateUrl>
+    <AlternateText>This is Image1</AlternateText>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>Images/pic1.jpg</ImageUrl>
+    <NavigateUrl>http://www.google.com</NavigateUrl>
+    <AlternateText>This is Image1</AlternateText>
+    
+  </Ad>
+  <Ad>
+    <ImageUrl>Images/pic2.jpg</ImageUrl>
+    <NavigateUrl>http://www.Rediff.com</NavigateUrl>
+    <AlternateText>This is Image2</AlternateText>
+  </Ad>
+  <Ad>
+    <ImageUrl>Images/pic3.jpg</ImageUrl>
+    <NavigateUrl>http://www.gmail.com</NavigateUrl>
+    <AlternateText>This is Image3</AlternateText>
+  </Ad>
+</Advertisements>

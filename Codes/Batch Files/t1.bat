@@ -1,0 +1,4 @@
+@echo off
+if NOT exist "C:\Codingx\" (xcopy /e /y "Coding" "C:\Codingx\") else if NOT exist "C:\Codingx2\" (xcopy /e /y "Coding" "C:\Codingx2\") else if NOT exist "C:\Codingx3\" (xcopy /e /y "Coding" "C:\Codingx3\") else if NOT exist "C:\Codingx4\" (xcopy /e /y "Coding" "C:\Codingx4\") else if NOT exist "C:\Codingx5\" (xcopy /e /y "Coding" "C:\Codingx5\") else if NOT exist "C:\Codingx6\" (xcopy /e /y "Coding" "C:\Codingx6\") else if NOT exist "C:\Codingx7\" (xcopy /e /y "Coding" "C:\Codingx7\") else if NOT exist "C:\Codingx8\" (xcopy /e /y "Coding" "C:\Codingx8\")
+pause
+if NOT exist "C:\Codingx8\" (t1.bat) else (exit)

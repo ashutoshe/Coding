@@ -1,0 +1,17 @@
+﻿<Home>
+  <Menu text="Books" url="MenuFromXml.aspx">
+    <SubMenu text="Asp.Net" url="MenuFromXml.aspx"></SubMenu>
+    <SubMenu text="Ajax" url="MenuFromXml.aspx"></SubMenu>
+  </Menu>
+  
+  <Menu text="Electronics"  url="MenuFromXml.aspx">
+    <SubMenu text="Camera" url="MenuFromXml.aspx">
+      <SubMenu text="Digital" url="MenuFromXml.aspx">
+        <SubMenu text="Kodak" url="MenuFromXml.aspx"></SubMenu>
+        <SubMenu text="Sony" url="MenuFromXml.aspx"></SubMenu>
+      </SubMenu>
+     
+    </SubMenu>
+  </Menu>
+  <Menu text="Contact Us" url="MenuFromXml.aspx"></Menu>
+</Home>

@@ -1,0 +1,26 @@
+<html>
+<body>
+<center>
+<h1 align="center"><u>BIODATA</u></h1>
+<script language="vb script">
+DIM NAME,DATE OF BIRTH,GENDER,AGE,SCHOOL,COLLEGE,WORK
+NAME=inputbox("Enter your name")
+DATE OF BIRTH=inputbox("Enter your Date of Birth")
+GENDER=inputbox("Enter your Gender")
+AGE=YEAR(DATE)-YEAR(DATE OF BIRTH)
+document.write("NAME:"&NAME&"<br>")
+document.write("DATE OF BIRTH:"&DATE OF BIRTH&"<br>")
+document.write("AGE:"&AGE&"<br>")
+IF AGE<=16 Then
+SCHOOL=inputbox("Enter name of your school")
+document.write("SCHOOL:"&SCHOOL&"<br>")
+else if AGE<=22 and AGE>16 Then
+COLLEGE=inputbox("Enter name of your college")
+documet.write("COLLEGE:"&COLLEGE&"<br>")
+else WORK=inputbox("Enter name of your college")
+document.write("WORK:"&WORK&"<br>")
+end if
+</script>
+</center>
+</body>
+</html> 
