@@ -6,4 +6,5 @@ git.exe add -A
 git.exe commit -m "%Input%"
 git.exe push
 
+@echo off
 pause
