@@ -4,12 +4,12 @@ import java.util.concurrent.locks.*;
 class Transaction extends Thread
 {
 	Account a;
-	private static int balance=1000;
+	private static int balance=200;
 	static int i;
 	
-	final Lock lock = new ReentrantLock();
-	final Condition withdraw=lock.newCondition();
-	final Condition deposit=lock.newCondition();
+	final static Lock lock = new ReentrantLock();
+	final static Condition withdraw=lock.newCondition();
+	final static Condition deposit=lock.newCondition();
 	
 	public Transaction(Account a,String n)
 	{
@@ -19,7 +19,7 @@ class Transaction extends Thread
 		
 	public void run()
 	{
-		for(i=0;i<10;i++)
+		for(i=0;i<20;i++)
 		{
 			try
 			{
@@ -28,7 +28,10 @@ class Transaction extends Thread
 				{
 					if(balance<=100)
 					{
+						System.out.println("................waiting!!");
 						withdraw.await();
+						System.out.println("................Receiving Signal");
+						
 					}
 					else
 					{
@@ -40,6 +43,7 @@ class Transaction extends Thread
 				{
 					deposit();
 					withdraw.signal();
+					Thread.sleep(100);
 		
 				}
 				
