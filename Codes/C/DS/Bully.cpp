@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <windows.h>			//for Sleep
+#include  <time.h>
 
 struct producer
 {
