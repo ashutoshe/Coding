@@ -13,7 +13,7 @@ int main()
 {
 	int n,i,j,pcrash,prun,pstart,lead,flag,elestart;
 	struct producer p[10];
-	for(i=0;i<n;i++)
+	for(i=0;i<10;i++)
 	{
 		p[i].pid=i+1;
 		p[i].status=1;								//status
@@ -47,6 +47,7 @@ int main()
 	printf("\nThe Leader is process %d",p[n-1].pid);
 	lead=n-1;
 	
+	srand(time(NULL));
 	while(1)
 	{
 		do
